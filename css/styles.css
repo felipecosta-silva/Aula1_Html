@@ -1,0 +1,13 @@
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h1, h3 {
+  text-align: left;
+}
+
+.codigo {
+  margin: 5% auto;
+  display: flex;
+}

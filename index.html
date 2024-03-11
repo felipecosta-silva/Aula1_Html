@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5: Estrutura e a semântica</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesAula1.css"> 
+</head>
+
+<body>
+  <div class="">
+    <header>
+      <nav>
+        <div id="sidebar">
+          <div class="sidebar-container">
+            <h1>HTML5</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Aula1</a></li>
+                <li><a href="../Aula2/index.html">Aula2</a></li>
+                <li><a href="/Aula3/index.html">Aula3</a></li>
+                <li><a href="./exercicio1.html">Exercício</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="container black-gray p-y-20">
+        <h3>Estrutura básica do HTML5: Doctype e Metadados</h3>
+
+        <img class="codigo" src="./img/Html-basico.jpeg" alt="Estrutura html">
+        <p>
+          O Document Type Definição (DTD, ou simplesmente Doctype ) é uma instrução que o navegador qualifica para a
+          especificação do código que está sendo usado no documento e deve ser escrito antes da tag "<html>"
+        </p>
+        <p>
+          Na tag "html" é onde declaramos o idioma principal do documento, através do atributo (que pode ser usado
+          também
+          em
+          outras tags do documento).
+        </p>
+        <h2>Metadados</h2>
+        <p>
+          Os Metadados são um conjunto de informações a respeito da página e do conteúdo publicado. Essas informações
+          são
+          usadas pelos navegadores e user-agents em geral,
+          sendo invisíveis para os usuários. <br>
+          Todos os Metadados mantidos na tag "head":
+        </p>
+        <div class="codigo Estrutura_html_head"></div>
+        <p>Informações como Título e Descrição por exemplo, são usados ​​pelos mecanismos de busca para montar uma SERP
+          (
+          Search Engine Results Page ).</p>
+        <h2>Links</h2>
+        <p>Com a tag "link" podemos referenciar documentos que serão usados ​​em nossa página. O atributo rel indica o
+          tipo
+          de documento que está sendo referenciado, como por exemplo o <b>rel=”stylesheet”</b> fazendo referência à
+          folha
+          de
+          estilo CSS
+          usado para formatar a página.
+        </p>
+        <!-- <h5> O link não deve ser confundido com a TAG "a"</h5> -->
+        <h2>Scripts</h2>
+        <p>Quando estamos usando scripts em nossas páginas, estamos usando o tipo de linguagem usando o atributo</p>
+        <p>No HTML5, o tipo de atributo passa a ser opcional, pois o Javascript é um idioma padrão de scripts usados
+          ​​na
+          Web:
+        </p>
+        <img class="codigo" src="./img/script.jpeg" alt="script header">
+        <h2>Conjunto de caracteres</h2>
+        <p>
+          metatag Charset
+        </p>
+        <h2>As novas marcações do HTML5</h2>
+        <p>
+          Em todas as divisões da Web existem referências aos tipos de conteúdo que são selecionados em todas as páginas
+          da
+          Web, rodapé ou menu de navegação.
+          <br>
+          Nas versões anteriores do HTML não havia tags com uma semântica apropriada para cada uma dessas divisões.
+          Dessa
+          forma, os desenvolvedores acabavam usando uma tag "div" para todos os seus próprios padrões de nomenclaturas
+          através dos atributos id ou class .
+          <br>
+          No HTML5 foram criadas diversas tags semânticas para indicar aos usuários-agentes quais conteúdos estão sendo
+          inseridos em cada uma das divisões da página, organizando e padronizando o desenvolvimento.
+        </p>
+        <div class="estruturaHtml"></div>
+        <h2>Cabeçalho com o elemento - header</h2>
+        <p>O novo elemento header do HTML5 é usado para definir o cabeçalho de uma página ou seção, e pode conter logo,
+          títulos, menu de navegação, campo de busca, etc.
+        </p>
+        <h2>Navegação Global com o elemento nav</h2>
+        <p>O novo elemento "nav" do HTML5 serve para agrupar uma lista de links para outras partes do site, seja essa
+          lista
+          de navegação local ou global. Esses blocos de links podem estar em diferentes partes do layout, como no
+          cabeçalho
+          ou no rodapé.
+        </p>
+        <img class="codigo" src="./img/nav.jpeg" width="924px" alt="Exemplo nav">
+        <h2>Diferentes seções com o elemento section</h2>
+        <p>
+          O novo elemento "section" do HTML5 é o menos específico entre as novas tags. A diferença do "section" para um
+          "div" é que o primeiro serve para dividir o conteúdo em diferentes seções, que pode conter elementos como
+          "header" ou "article", enquanto o segundo divide qualquer conteúdo, sem uma finalidade específica.
+        </p>
+        <img class="codigo" src="./img/section.jpeg" width="924px" alt="Exemplo Section">
+        <h2>O conteúdo central com o elemento article</h2>
+        <p>O novo elemento article do HTML5 serve para identificar um conteúdo independente e de maior distribuição
+          dentro
+          da página, que pode ser distribuído via feed, como um post, artigo ou bloco de comentários.
+          O elemento article pode conter outros elementos como header ou footer.
+        </p>
+        <img class="codigo" src="./img/article.jpeg" width="924px" alt="Exemplo article">
+        <h2>Conteúdos relacionados com o elemento aside</h2>
+        <p>O novo elemento
+        <aside> do HTML5 serve para apresentar conteúdos que fazem referência ao conteúdo principal à sua
+          volta, como informações, blocos de navegação ou até mesmo publicidade.
+          </p>
+          <img class="codigo" src="./img/aside.jpeg" width="924px" alt="Exemplo aside">
+          <h2>Rodapé com o elemento footer</h2>
+          <p >
+            O elemento footer do HTML5 representa o rodapé de um documento ou de uma seção específica do mesmo, podendo
+            conter referências ao autor e aos direitos autorais, blocos de navegação ou links relacionados.
+          </p>
+      </main>
+      <footer>
+        <p>&copy; 2024 Aula HTML CSS. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

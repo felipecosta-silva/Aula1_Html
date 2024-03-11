@@ -1,0 +1,133 @@
+body {
+  background: black;
+  color: white
+}
+/* 
+header {
+ background: linear-gradient(to bottom, #fec63e, #333);
+  color: #fff;
+  padding: 5px;
+}
+*/
+
+header h2 {
+  text-align: center;
+}
+
+
+.black-gray {
+  background: rgb(31, 31, 36);
+}
+
+.codigo {
+  margin: 5% auto;
+  display: flex;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 15px;
+}
+
+html {
+	font-family: 'Open sans', 'sans-serif';
+	color: #373A3C;
+}
+
+a{
+	transition: .5s;
+}
+
+/*sidebar*/
+
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #006599;
+	padding-top: 40px;
+}
+
+#sidebar h1{
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#sidebar a:hover{
+	color: #F4EF5E;
+}
+
+#sidebar li {
+	padding: 20px;
+}
+
+.sidebar-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.content {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+	color: #5dacd4;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content h2 {
+	font-size: 35px;
+}
+
+main {
+	padding-left: 50px;
+	height: auto;
+}
+
+.Estrutura_html_head {
+	height: 552px;
+	background-image: url(../img/head.jpeg);
+	background-repeat: no-repeat;
+}
+
+.estruturaHtml {
+	height: 552px;
+	background-image: url(../img/estruturaHtml.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	background-color: white;
+	margin: 1rem auto;
+	max-width: 95%;
+}
+
+.m-b-15 {
+	margin-bottom: 15px;
+}
+
+.p-y-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
